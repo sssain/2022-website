@@ -7,7 +7,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/uikit.css">
     <link rel="stylesheet" href="css/styles.css">
-
     <!-- JS -->
     <script src="js/uikit.js"></script>
     <script src="js/uikit-icons.js"></script>
@@ -25,9 +24,9 @@
             </div>
             <div class="uk-navbar-right uk-margin-small-right uk-margin-xlarge-right">        
                 <ul class="uk-navbar-nav ">
-                    <li ><a href="#about" class="uk-button-text uk-text-primary uk-text-lowercase">about</a></li>
-                    <li><a href="#projects" class="uk-button-text uk-text-primary uk-text-lowercase">projects</a></li>
-                    <li><a href="#contact" class="uk-button-text uk-text-primary uk-text-lowercase">contact</a></li>
+                    <li ><a href="#about" class="uk-button-text uk-text-primary uk-text-lowercase" uk-scroll>about</a></li>
+                    <li><a href="#projects" class="uk-button-text uk-text-primary uk-text-lowercase" uk-scroll>projects</a></li>
+                    <li><a href="#contact" class="uk-button-text uk-text-primary uk-text-lowercase" uk-scroll>contact</a></li>
                 </ul>
             </div> 
                 </div>    
@@ -38,7 +37,7 @@
 
 <!-- Hamburger Menu -->
 <div class="uk-hidden@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"">
-    <nav class="uk-navbar uk-navbar-container uk-margin uk-navbar-transparent">
+    <nav class="uk-navbar uk-navbar-container uk-margin ">
         <div class="uk-navbar-left uk-margin-small-top uk-margin-medium-left uk-margin-medium-right">
             <a class="uk-navbar-item uk-logo uk-margin-small-bottom" href="#">saint.</a>
 
@@ -66,7 +65,7 @@
 <!-- OffCanvas End -->
 
 <!-- about section -->
-<section id="about" class="uk-section uk-section-primary uk-margin-xlarge-left">
+<section id="about" class="uk-section uk-section-primary uk-margin-xlarge-left uk-margin-large-top">
     <h1 class="uk-text-primary uk-margin-large-top uk-margin-large-bottom uk-margin-xlarge-right">im naufal zaqie, aka saint. <br>a front-end web developer.     <br><a href="#projects" class="uk-button-text uk-text-decoration-none uk-text-default" uk-scroll>my projects</a></h1>
 
 
@@ -74,8 +73,9 @@
 <!-- about section ends -->
 <!-- projects section -->
 <section id="projects" class="uk-section uk-section-primary uk-margin-xlarge-left uk-margin-xlarge-top ">
-    <h1 class="uk-margin-xlarge-bottom">my projects.</h1>
-
+    <div class="uk-margin-large-top">
+        <h1 class="uk-margin-large-bottom">my projects.</h1>
+    </div>
     <div class="uk-child-width-1-4@s uk-grid-match uk-margin-xlarge-right uk-margin-xlarge-bottom" uk-grid>
             <div>
                 <div class="uk-card uk-card-small uk-card-hover uk-card-body">
