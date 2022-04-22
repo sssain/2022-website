@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/uikit.css">
+    <!-- JS -->
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.js"></script>
+    <!-------->
+    <title>Naufal Zaqie / sssaintt.xyz</title>
+</head>
+<body>
+
+<!-- NavBar -->
+    <div class="uk-visible@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+            <div class="uk-navbar-left uk-margin-xlarge-left uk-margin-xlarge-right">
+        
+                <a class="uk-navbar-item uk-logo uk-margin-small-bottom" href="#">saint.</a>
+            </div>
+            <div class="uk-navbar-right uk-margin-small-right uk-margin-xlarge-right">        
+                <ul class="uk-navbar-nav ">
+                    <li ><a href="#about" class="uk-button-text uk-text-primary uk-text-lowercase">about</a></li>
+                    <li><a href="#projects" class="uk-button-text uk-text-primary uk-text-lowercase">projects</a></li>
+                    <li><a href="#contact" class="uk-button-text uk-text-primary uk-text-lowercase">contact</a></li>
+                </ul>
+            </div> 
+                </div>    
+            </div>
+        </nav>
+    </div>
+<!-- NavBar End -->
+
+<!-- Hamburger Menu -->
+<div class="uk-hidden@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"">
+    <nav class="uk-navbar uk-navbar-container uk-margin uk-navbar-transparent">
+        <div class="uk-navbar-left uk-margin-small-top uk-margin-medium-left uk-margin-medium-right">
+            <a class="uk-navbar-item uk-logo uk-margin-small-bottom" href="#">saint.</a>
+
+        </div>
+        <div class="uk-navbar-right uk-margin-medium-right">
+            <button class="uk-navbar-toggle uk-text-primary" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav-primary"></button>
+        </div>
+    </nav>
+</div>
+<!-- Hamburger Menu End -->
+
+<!-- OffCanvas -->
+<div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-background-primary ">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <li class="uk-button-text"><a class="uk-text-primary" href="#">home</a></li>
+            <li class="uk-button-text"><a class="uk-text-primary" href="profil.php">about</a></li>
+            <li class="uk-button-text"><a class="uk-text-primary" href="koleksi.php">projects</a></li>
+            <li class="uk-button-text"><a class="uk-text-primary" href="#">contact</a></li>
+
+                </ul>
+    </div>
+</div>
+<!-- OffCanvas End -->
+
+<!-- about section -->
+<section id="about" class="uk-section uk-section-primary uk-margin-xlarge-left">
+    <h1 class="uk-text-primary uk-margin-large-top uk-margin-large-bottom uk-margin-xlarge-right">im naufal zaqie, aka saint. <br>a front-end web developer.     <br><a href="#projects" class="uk-button-text uk-text-decoration-none uk-text-default" uk-scroll>my projects</a></h1>
+
+
+</section>
+<!-- about section ends -->
+<!-- projects section -->
+<section id="projects" class="uk-section uk-section-primary uk-margin-xlarge-left uk-margin-xlarge-top ">
+    <h1 class="uk-margin-xlarge-bottom">my projects.</h1>
+
+    <div class="uk-child-width-1-4@s uk-grid-match uk-margin-xlarge-right uk-margin-xlarge-bottom" uk-grid>
+            <div>
+                <div class="uk-card uk-card-small uk-card-hover uk-card-body">
+                    <h3 class="uk-card-title">perpus ibs</h3>
+                    <p>website perpustakaan ir. bambang suryanto.</p>
+                    <a href="https://perpus.zya.me">project link</a>
+                </div>
+            </div>
+
+                <div>
+                    <div class="uk-card uk-card-small uk-card-hover uk-card-body">
+                        <h3 class="uk-card-title">dawn.</h3>
+                        <p>multipurpose discord bot.</p>
+                        <a href="https://dawn.sssaintt.xyz">project link</a>
+                    </div>
+    </div>
+            
+</section>
+
+<section id="contact" class="uk-section uk-section-primary uk-margin-xlarge-left uk-margin-xlarge-top uk-margin-xlarge-right">
+    <div class="uk-margin-xlarge-bottom">
+        <h1 class="uk-margin-xlarge-top uk-margin-medium-bottom">interested in working with me?</h1>
+        <a href="mailto:naufalizeds@gmail.com" class="uk-button-text uk-text-decoration-none">email</a> <a href="https://instagram.com/naefol" class="uk-button-text uk-text-decoration-none">instagram</a> <a href="https://discordapp.com/users/658175780697669652" class="uk-button-text uk-text-decoration-none">discord</a> <a href="https://github.com/sssain" class="uk-button-text uk-text-decoration-none">github</a>
+        <br><br> 
+        <a href="#" class="uk-button-text uk-text-decoration-none " uk-scroll>scroll to top <span uk-icon="chevron-up"></span>
+        </a>
+        <p>@2022 sssaintt.</p>
+    </div>
+
+
+</section>
+
+</body>
+</html>
