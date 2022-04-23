@@ -12,6 +12,7 @@
     <script src="js/uikit.js"></script>
     <script src="js/uikit-icons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <!-------->
     
     <title>𝚜𝚊𝚒𝚗𝚝.</title>
@@ -27,7 +28,7 @@
             </div>
             <div class="uk-navbar-right uk-margin-small-right uk-margin-xlarge-right">        
                 <ul class="uk-navbar-nav ">
-                    <li><a href="#about" class="uk-button-text uk-text-primary uk-text-lowercase" uk-scroll>about</a></li>
+                    <li><a href="about.html" class="uk-button-text uk-text-primary uk-text-lowercase" >about</a></li>
                     <li><a href="#projects" class="uk-button-text uk-text-primary uk-text-lowercase" uk-scroll>projects</a></li>
                     <li><a href="#contact" class="uk-button-text uk-text-primary uk-text-lowercase" uk-scroll>contact</a></li>
                 </ul>
@@ -58,7 +59,7 @@
 
         <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
             <li class="uk-button-text"><a class="uk-text-primary" href="#" uk-scroll>home</a></li>
-            <li class="uk-button-text"><a class="uk-text-primary" href="#about" uk-scroll>about</a></li>
+            <li class="uk-button-text"><a class="uk-text-primary" href="about.html">about</a></li>
             <li class="uk-button-text"><a class="uk-text-primary" href="#projects" uk-scroll>projects</a></li>
             <li class="uk-button-text"><a class="uk-text-primary" href="#contact" uk-scroll>contact</a></li>
 
@@ -70,7 +71,9 @@
 <!-- about section -->
 <div id="butter">
 <section id="about" class="uk-section uk-section-primary uk-margin-xlarge-left uk-margin-large-top">
-    <h1 class="uk-text-primary uk-margin-large-top uk-margin-large-bottom uk-margin-xlarge-right">im naufal zaqie, aka saint. <br>a front-end web developer.     <br><a href="#projects" class="uk-button-text uk-text-decoration-none uk-text-default" uk-scroll>my projects</a></h1>
+    <h1 id="app" class="uk-text-primary uk-margin-large-top uk-margin-small-bottom uk-margin-xlarge-right">im naufal zaqie, aka saint. <br>a front-end web developer.</h1>
+    <a href="#projects" class="uk-button-text uk-text-decoration-none uk-text-default " uk-scroll>my projects,</a>
+    <a href="about.html" class="uk-button-text uk-text-decoration-none uk-text-default ">more about me</a>
 
 
 </section>
@@ -101,9 +104,9 @@
 </section>
 
 <section id="contact" class="uk-section uk-section-primary uk-margin-xlarge-left uk-margin-xlarge-top uk-margin-xlarge-right">
-    <div class="uk-margin-xlarge-bottom">
+    <div class="uk-margin-xlarge-bottom ">
         <h1 class="uk-margin-xlarge-top">interested in working with me?</h1>
-        <h3><a href="mailto:naufalizeds@gmail.com" class="uk-button-text uk-text-decoration-none"><span uk-icon="icon: mail; ratio: 2"></span> naufalizeds@gmail.com</a>.</h3>
+        <h3 class=""><a href="mailto:naufalizeds@gmail.com" class="uk-button-text uk-text-decoration-none "><span uk-icon="icon: mail; ratio: 2"></span> naufalizeds@gmail.com</a>.</h3>
     </div>
 
 </section>
@@ -123,5 +126,6 @@
 <script>
     butter.init({cancelOnTouch: true});
   </script>
+<script src="/js/typewriter.js"></script>
 </body>
 </html>
