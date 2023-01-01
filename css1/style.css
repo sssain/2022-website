@@ -6,6 +6,76 @@ html{
 
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+}
+.loader .stripe {
+  flex: 1;
+  background: #ededed;
+  transition: transform 0.8s ease;
+  transition-delay: 1.3s;
+}
+.loader .stripe:nth-child(2) {
+  transition-delay: 1.35s;
+}
+.loader .stripe:nth-child(3) {
+  transition-delay: 1.475s;
+}
+.loader .stripe:nth-child(4) {
+  transition-delay: 1.525s;
+}
+.loader .claim {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  font-size: 1.5em;
+  color: #171717;
+}
+.loader .claim span {
+  display: inline-block;
+  transform: translate3d(0, 150%, 0);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.loader .claim span:nth-child(2) {
+  transition-delay: 0.4s;
+}
+.loader .claim span:nth-child(3) {
+  transition-delay: 0.8s;
+}
+.loader.loaded .stripe {
+  transform: translate3d(0, 100%, 0);
+}
+.loader.loaded .claim span {
+  transform: translate3d(0, 0%, 0);
+  opacity: 1;
+  animation: disappear 0.55s ease 1.2s forwards;
+}
+.loader.loaded .claim span:nth-child(2) {
+  animation-delay: 1.28s;
+}
+.loader.loaded .claim span:nth-child(3) {
+  animation-delay: 1.34s;
+}
+.loader.hidden {
+  display: none;
+}
+@keyframes disappear {
+  to {
+    transform: translate3d(0, 150%, 0);
+    opacity: 0;
+  }
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -30,3 +100,4 @@ html{
     width: 100%;
     height: 100%;
   }
+
